@@ -1,7 +1,7 @@
 Lab 3 - Multipage Website
 Group Members
-Mambwe L. Chilebela
-Comfort Chapa
+1. Mambwe L. Chilebela
+2. Comfort Chapa
 
 Page Descriptions
 1. Home Page (index.html)
