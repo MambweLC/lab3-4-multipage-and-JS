@@ -33,7 +33,7 @@ header button {
 }
 .dark-theme { 
     background-color: #121212; 
-    color: #000000; 
+    color: #ffffff; 
     
     }
     .dark-theme .hero,
@@ -160,3 +160,15 @@ footer {
         padding: 30px;
     }
 }
+#response {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+}
+
+.answer { 
+    display: none; 
+    } 
+    .answer.visible { 
+    display: block; 
+    } 
