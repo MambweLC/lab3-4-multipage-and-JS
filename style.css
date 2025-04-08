@@ -27,6 +27,22 @@ nav ul li a {
     text-decoration: none;
     font-size: large;
 }
+header button {
+    background-color: #121212; 
+    color: #f0f0f0;  
+}
+.dark-theme { 
+    background-color: #121212; 
+    color: #000000; 
+    
+    }
+    .dark-theme .hero,
+    .dark-theme .intro,
+    .dark-theme .sidebar {
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+    
 
 /* Hero Section */
 .hero {
