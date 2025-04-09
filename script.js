@@ -57,3 +57,14 @@ document.getElementById("loadUsersBtn").addEventListener("click",
           q.nextElementSibling.classList.toggle("visible"); 
         }); 
       });
+
+      function updateClock() {
+        const clock = document.getElementById("clock");
+        const now = new Date();
+        clock.textContent = now.toLocaleTimeString();
+    }
+    
+    setInterval(updateClock, 1000);
+    updateClock(); // initial call
+
+    

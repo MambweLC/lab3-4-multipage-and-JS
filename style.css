@@ -7,6 +7,13 @@ html, body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
+#clock {
+    text-align: left;
+    font-size: 1rem;
+    color: #7285c5;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
 
 /* Navigation */
 nav ul {
@@ -28,27 +35,40 @@ nav ul li a {
     font-size: large;
 }
 header button {
-    background-color: #121212; 
+    background-color: #000000; 
     color: #f0f0f0;  
 }
 .dark-theme { 
     background-color: #121212; 
     color: #ffffff; 
     
-    }
-    .dark-theme .hero,
-    .dark-theme .intro,
-    .dark-theme .sidebar {
-        background-color: #121212;
-        color: #f0f0f0;
-    }
-    
+}
+
+.dark-theme .hero,
+.dark-theme .team-section,
+.dark-theme .intro,
+.dark-theme .sidebar {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.team-section {
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+   
+}
+.team-section button{
+    background-color: #000000; 
+    color: #f0f0f0;  
+}
+
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #ddd;
 }
 
 /* Flexbox Layout for Home Page */
@@ -88,7 +108,9 @@ header button {
     width: 100%;
     height: auto;
 }
-
+.faq-item{
+    text-align: center;
+}
 /* Contact Form */
 .contact-form {
     max-width: 500px; /* Set a max-width to control form size */
@@ -172,3 +194,9 @@ footer {
     .answer.visible { 
     display: block; 
     } 
+   
+    
+    #backToTop:hover {
+        background-color: #555;
+    }
+    
