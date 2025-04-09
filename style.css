@@ -8,10 +8,10 @@ html, body {
     box-sizing: border-box;
 }
 #clock {
-    text-align: left;
-    font-size: 1rem;
+    text-align: center;
+    font-size: 25px;
     color: #7285c5;
-    margin-top: 0.5rem;
+    margin-top: 25px;
     font-weight: bold;
 }
 
