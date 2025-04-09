@@ -1,32 +1,65 @@
-Lab 3 - Multipage Website
+Web Development Labs – Multipage Website Project
+
+Lab 3 – Multipage Website
+
 Group Members
-1. Mambwe L. Chilebela
+1. Mambwe L. Chilebela  
 2. Comfort Chapa
 
 Page Descriptions
-1. Home Page (index.html)
-The home page features a welcoming hero section with a brief introduction to the website. Below the hero section, two side-by-side sections (using Flexbox) provide more details about the website and its latest updates.
 
-2. Services Page (services.html)
-This page displays four service cards arranged in a grid layout using CSS Grid. Each card contains an image, a heading, and a brief description. The cards have hover effects to enhance interactivity.
+1. Home Page (`index.html`)
+- Features a welcoming hero section with a brief introduction.
+- Below the hero, two side-by-side sections (using Flexbox) detail the website and its latest updates.
 
-3. Contact Page (contact.html)
-The contact page includes a styled HTML5 form with fields for name, email, subject, and message. The form utilizes built-in HTML5 validation. It also includes subtle animations for button hover and input field focus.
+2. Services Page (`services.html`)
+- Displays four service cards in a responsive grid layout (CSS Grid).
+- Each card contains an image, heading, and description.
+- Hover effects enhance interactivity.
 
-Summary of Features Used
-Selectors: Used various CSS selectors, including element selectors (e.g., nav ul li), class selectors (e.g., .hero), and pseudo-classes (e.g., :hover, :focus) to style different elements.
+3. Contact Page (`contact.html`)
+- Includes a styled HTML5 contact form with fields for name, email, subject, and message.
+- Utilizes HTML5 form validation and animations for button hover/input focus.
 
-Flexbox: Used Flexbox on the home page to create a responsive layout for two sections (intro and sidebar). Flexbox ensures that the layout adapts well to various screen sizes.
+ Summary of Features Used
+Selectors: Element, class, and pseudo-classes (`:hover`, `:focus`) for styling.
+flexbox: Used for responsive layout on the home page.
+Grid: Applied to the services page for a flexible card layout.
+Media Queries: Ensured responsiveness across different screen sizes:
+  - `max-width: 1024px`: Adjusts for tablets.
+  - `max-width: 768px`: Tweaks for smaller screens.
+  - `max-width: 480px`: Optimized for mobile devices.
+  Animations: Subtle hover animations via `@keyframes` and transitions.
 
-Grid: Utilized CSS Grid on the services page to create a flexible grid of four service cards. The grid adjusts automatically based on screen size, showing fewer columns as the screen size decreases.
 
-Media Queries: Added media queries to ensure the website is responsive across various screen sizes:
+Lab 4 – Making the Website Interactive with JavaScript
 
-max-width: 1024px: Adjusts layout for tablet-sized screens.
+Features Implemented
+Theme Toggle (`index.html`)
+- A button toggles between light and dark mode using `classList.toggle()` on the body.
+- CSS updates the background and text colors of the page and its sections.
 
-max-width: 768px: Further tweaks for smaller screens like tablets in portrait mode.
+Form Validation (`contact.html`)
+- Prevents form submission if fields are empty.
+- Displays a personalized thank-you message when successfully submitted.
+- Uses DOM methods and `addEventListener`.
 
-max-width: 480px: Adjustments for mobile devices to stack elements and ensure proper spacing.
+Fetch API Integration (`index.html`)
+- Fetches and displays a list of users from `https://jsonplaceholder.typicode.com/users`.
+- Users are rendered dynamically into a list when the **Load Users** button is clicked.
 
-Animation: Implemented subtle hover animations using @keyframes for buttons and input focus transitions to improve user experience.
+Interactive FAQ (`index.html`)
+- Questions can be clicked to reveal or hide answers.
+- Toggled using `classList.toggle()` and basic CSS transitions.
 
+Bonus Feature: Real-Time Clock (`header`)
+- A live digital clock is displayed in the site header.
+- Updated every second using `setInterval()`.
+
+
+Technologies Used
+- HTML5, CSS3, and JavaScript (ES6+)
+- DOM Manipulation
+- CSS Flexbox & Grid
+- Responsive Design
+- Fetch API
